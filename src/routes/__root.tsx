@@ -80,19 +80,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Cue Naija Masters | The Pinnacle of Nigerian Snooker" },
+      {
+        name: "description",
+        content:
+          "Cue Naija Masters, Magodo Edition 2026. Lagos's premier competitive snooker tournament. 32 players, cash prizes, and the championship trophy.",
+      },
+      { name: "author", content: "Cue Naija Masters" },
+      { property: "og:title", content: "Cue Naija Masters" },
+      {
+        property: "og:description",
+        content: "The Pinnacle of Nigerian Snooker. Magodo Edition 2026.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap",
       },
     ],
   }),
