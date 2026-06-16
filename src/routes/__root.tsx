@@ -88,13 +88,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Cue Naija Masters, Magodo Edition 2026. Lagos's premier competitive snooker tournament. 32 players, cash prizes, and the championship trophy.",
       },
       { name: "author", content: "Cue Naija Masters" },
-      { property: "og:title", content: "Cue Naija Masters" },
+      { property: "og:title", content: "Cue Naija Masters | The Pinnacle of Nigerian Snooker" },
       {
         property: "og:description",
         content: "The Pinnacle of Nigerian Snooker. Magodo Edition 2026.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Cue Naija Masters | The Pinnacle of Nigerian Snooker" },
+      { name: "description", content: "Cue Naija Masters is a website for a Nigerian snooker tournament, facilitating registration and providing event details." },
+      { property: "og:description", content: "Cue Naija Masters is a website for a Nigerian snooker tournament, facilitating registration and providing event details." },
+      { name: "twitter:description", content: "Cue Naija Masters is a website for a Nigerian snooker tournament, facilitating registration and providing event details." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4ad3179c-ef74-4318-afbb-59de95dfcd1d/id-preview-cceff98b--6db98ee9-3347-4d2a-a304-990da84fdb60.lovable.app-1781622185879.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4ad3179c-ef74-4318-afbb-59de95dfcd1d/id-preview-cceff98b--6db98ee9-3347-4d2a-a304-990da84fdb60.lovable.app-1781622185879.png" },
     ],
     links: [
       {
