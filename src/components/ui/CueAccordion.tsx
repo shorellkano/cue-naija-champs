@@ -7,7 +7,7 @@ export interface AccordionItem {
   content: ReactNode;
 }
 
-export function Accordion({
+export function CueAccordion({
   items,
   defaultOpen = -1,
 }: {
