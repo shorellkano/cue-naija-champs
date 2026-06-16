@@ -1,29 +1,40 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/sections/Hero";
+import { QuickStats } from "@/components/sections/QuickStats";
+import { Highlights } from "@/components/sections/Highlights";
+import { Sponsors } from "@/components/sections/Sponsors";
+import { FooterCTA } from "@/components/sections/FooterCTA";
+import { SectionDivider } from "@/components/ui/SectionDivider";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Cue Naija Masters | The Pinnacle of Nigerian Snooker" },
+      {
+        name: "description",
+        content:
+          "Cue Naija Masters, Magodo Edition 2026. Lagos's premier competitive snooker tournament. Register now for your shot at the title.",
+      },
+      { property: "og:title", content: "Cue Naija Masters" },
+      {
+        property: "og:description",
+        content: "The Pinnacle of Nigerian Snooker. Magodo Edition 2026.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Hero />
+      <QuickStats />
+      <SectionDivider variant="diagonal" from="#111811" to="#1A2A1A" />
+      <Highlights />
+      <SectionDivider variant="wave" from="#1A2A1A" to="#0A0A0A" />
+      <Sponsors />
+      <FooterCTA />
+    </>
   );
 }
