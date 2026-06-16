@@ -14,6 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 import { WhatsAppWidget } from "../components/layout/WhatsAppWidget";
+import { Toaster } from "../components/ui/sonner";
 
 function NotFoundComponent() {
   return (
